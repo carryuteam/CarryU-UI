@@ -1,0 +1,11 @@
+<!--pages/login/login.wxml-->
+<view class="full content-center">
+  <view style="margin-top: 70rpx; padding: 0 80rpx; width: 100%">
+    <view class="title">登录CarryU</view>
+    <view class="description">授权登录后才可以继续浏览</view>
+    <button open-type='getUserInfo' bind:getuserinfo='onGetUserInfo' style="width: 100%">
+      <image mode="widthFix" src="../../images/wechat.png"></image>
+      <text>微信账号登录</text>
+    </button>
+  </view>
+</view>

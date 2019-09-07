@@ -1,0 +1,29 @@
+/* pages/login/login.wxss */
+page {
+  /* background-color: white; */
+  height: 100%;
+}
+
+.title {
+  font-size:40rpx;
+  color:#000000;
+  margin-bottom: 300rpx;
+}
+
+.description {
+  font-size:30rpx;
+  color:#888888;
+  margin-bottom: 50rpx;
+}
+
+button {
+  width: 240rpx;
+  border-radius: 200rpx;
+  background-color: #006D75;
+  color: white;
+}
+
+button image {
+  width: 60rpx;
+  margin-right: 15rpx;
+}

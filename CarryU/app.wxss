@@ -1,0 +1,24 @@
+/**app.wxss**/
+/*
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+*/
+
+.content-center { display: flex; align-items: center; text-align: center; justify-content: space-around; }
+
+/* 修正图片和文字一起排列的时候错位的问题 */
+image {
+  vertical-align: middle;
+}
+
+textarea {
+  padding: 0!important;
+  margin: 0!important;
+}

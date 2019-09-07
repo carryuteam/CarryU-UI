@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/exp_share/exp_share",
+    "pages/files/files"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#87E8DE",
+    "navigationBarTitleText": "CarryU",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "a8b6c8",
+    "selectedColor": "#36CFC9",
+    "list": [
+      {
+        "pagePath": "pages/files/files",
+        "text": "资料城",
+        "iconPath": "/images/tabBar/home-white icon.png",
+        "selectedIconPath": "/images/tabBar/home-color icon.png"
+      },
+      {
+        "pagePath": "pages/exp_share/exp_share",
+        "text": "经验说",
+        "iconPath": "/images/tabBar/com-white icon.png",
+        "selectedIconPath": "/images/tabBar/com-color icon.png"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "text": "易物",
+        "iconPath": "/images/tabBar/trans-white icon.png",
+        "selectedIconPath": "/images/tabBar/trans-color icon.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "/images/tabBar/mine-white icon.png",
+        "selectedIconPath": "/images/tabBar/mine-color icon.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
