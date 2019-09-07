@@ -1,0 +1,37 @@
+<!--pages/files/files.wxml-->
+<view>
+  <image class='backgroundImage' src="../../images/file_page/background.png" mode="aspectFill" ></image>
+  <view class="navigatorBar">
+    <input id="keyword" placeholder="搜点什么呢" type="text" type="search" class="searchBox">
+    </input>
+    <view class="filter">
+      <block wx:for="{{rankerList}}">
+      <button class='{{(item.id == rankerSelected) ? "rankerItemSelected" : "rankerItem"}}' data-id="{{index}}" bindtap="onSelectRanker">{{item.text}}</button>
+      </block>
+      <view style="display: flex; margin-right: 30rpx">
+        <image class="icon-img" src="../../images/file_page/sort.png"></image>
+        <image class="icon-img" src="../../images/file_page/filter.png"></image>
+      </view>
+    </view>
+  </view>
+  <view style="width: 100%; height: 100%;">
+    <scroll-view wx:for="{{fileList}}" wx:for-item="file" class="scrollExplore">
+      <view class="fileView">
+        <view class="fileTitle">
+          <text class="fileTitleText">{{file.title}}</text>
+          <image class="fileTitleDetail" src="../../images/file_page/rectangle.png" mode="aspectFill"></image>
+        </view>
+        <text class="fileLable">标签：{{file.lable}}</text>
+        <view class="divLine"></view>
+        <view style="display: flex; height: 40rpx; margin-top: 20rpx">
+          <text class="fileShareTime">分享于{{file.shareTime}}</text>
+          <image src="../../images/file_page/add.png" wx:if="{{file.added == true}}" class="fileActionImage"></image>
+          <image src="../../images/file_page/add_selected.png" wx:else class="fileActionImage"></image>
+          <image src="../../images/file_page/comment.png" class="fileActionImage"></image>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+
+</view>
